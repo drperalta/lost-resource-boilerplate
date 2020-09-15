@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch true",
-    "build": "webpack"
+    "serve:script": "webpack --mode development --watch true",
+    "build:script": "webpack",
+    "serve:ui": "vue-cli-service serve",
+    "build:ui": "vue-cli-service build",
+    "lint:ui": "vue-cli-service lint"
   },
   "author": "David Peralta",
   "license": "ISC",
@@ -14,17 +17,30 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-service": "^4.5.6",
+    "@vue/eslint-config-airbnb": "^5.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "base64-inline-loader": "^1.1.1",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
-    "dotenv-webpack": "^2.0.0"
+    "core-js": "^3.6.5",
+    "dotenv-webpack": "^2.0.0",
+    "vue": "^2.6.12"
   }
 }
