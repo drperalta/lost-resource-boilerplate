@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch true",
+    "script": "webpack --mode development --watch true",
     "build": "webpack"
   },
   "author": "David Peralta",
